@@ -3,36 +3,26 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text, View, Image, TouchableWithoutFeedback, TouchableOpacity, TouchableHighlight, Alert, Button, Platform, Dimensions } from 'react-native';
 
-export default function App() {
-  console.log(require('./app/assets/icon.png'))
-  return (
-    // styles.container is a plain JS object. Use {{}} for inline
-    // <SafeAreaView style={styles.container}>
 
+export default function App() {
+  return (
+    // <SafeAreaView style={styles.container}>
     <SafeAreaView style={[styles.container, containerStyle]}>
       <StatusBar style="light" />
       <Text style={{ color: 'white', fontSize: 35, letterSpacing: 5, fontFamily: 'Baskerville' }}>limited run</Text>
-      <Text>1234567</Text>
-      {/* <TouchableHighlight onPress={() => console.log('Image tapped')}>
+      <Text>let's build shit</Text>
+      <TouchableHighlight onPress={() => console.log('Image tapped')}>
         <Image
-          source={{
-            width: 200,
-            height: 300,
-            uri: "https://picsum.photos/200/300" 
-          }}  
-        />
-      </TouchableHighlight> */}
+        style={{width: 200, height: 300, borderWidth: 2}}
+          source={require("./app/assets/bike1.jpeg")}/>
+      </TouchableHighlight>
       <Button 
         color="orange"
-        title="CLick Me" 
-          // onPress={() => Alert.alert("My Title", "My Message", [
-          //   {text: "Yes", onPress: () => console.log('Yes')},
-          //   {text: "No", onPress: () => console.log('No')},
-          // ])}
-        // Alert.prompt is iOS only
-        onPress={() => 
-          Alert.prompt("My Title", "My Message", text => console.log(text))
-        }
+        title="Login" 
+          onPress={() => Alert.alert("Login", "Welcome Back ", [   
+            {text: "Back", onPress: () => console.log('Back')},
+            {text: "Login", onPress: () => console.log('Login')}, // console.log -> route to next page  
+          ])}
       />
     </SafeAreaView>
   );
