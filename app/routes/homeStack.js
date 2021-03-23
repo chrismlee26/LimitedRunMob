@@ -2,7 +2,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
 import Login from '../screens/login';
 import Home from '../screens/home';
-// import Tech from '.app/screens/tech';
+import Tech from '../screens/tech';
 // import Timeline from './app/screens/timeline'
 
 const screens = {
@@ -12,9 +12,9 @@ const screens = {
   Home: {
     screen: Home
   },
-  // Tech: {
-  //   screen: Tech
-  // },
+  Tech: {
+    screen: Tech
+  },
   // Timeline: {
   //   screen: Timeline
   // }
