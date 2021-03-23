@@ -1,11 +1,11 @@
 import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableWithoutFeedback, TouchableOpacity, TouchableHighlight, Alert, Button, Platform, Dimensions, YellowBox } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableWithoutFeedback, TouchableOpacity, TouchableHighlight, Alert, Button, Platform, Dimensions } from 'react-native';
 import 'react-native-gesture-handler';
 
 
-export default function Home() {
+export default function Home({ navigation }) {
     
   const pressHandler = () => {
     navigation.navigate('Tech');
@@ -53,7 +53,7 @@ export default function Home() {
           style={{position: 'absolute', left: 38, top: 380, fontSize: 16, color: 'white', fontFamily: 'Helvetica', textDecorationLine: 'underline'}}>Concept
         </Text>
         <Text 
-          onPress={() => console.log('Technical Tapped')}
+          onPress={pressHandler}
           style={{position: 'absolute', left: 180, top: 380, fontSize: 16, color: 'white', fontFamily: 'Helvetica', textDecorationLine: 'underline'}}>Technical
         </Text>
         <Text 

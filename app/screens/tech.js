@@ -16,7 +16,7 @@ export default function Home() {
           onPress={() => console.log('Image tapped')}>
           <Image
             style={{width: 500, height: 300, right: 45 }}
-            source={require("../assets/bike1.jpeg")}
+            source={require("../assets/fanblade.jpg")}
             />
         </TouchableOpacity> 
       </View>
@@ -32,14 +32,10 @@ export default function Home() {
         <Text style={{position: 'absolute', right: 40, top: 13, fontSize: 15, color: 'white', fontFamily: 'Helvetica Neue'}}>05/21 DELIVERY</Text>
       </View>
       <View>
-        <Text style={{position: 'absolute', left: 60, top: 60, fontSize: 16, color: 'white', fontFamily: 'Helvetica'}}>DUCATI 1299 CARBON RACE FAIRINGS</Text>
-        <Text style={{position: 'absolute', left: 195, top: 80, fontSize: 13, color: 'white', fontFamily: 'Helvetica Neue', fontStyle: 'italic'}}>by</Text>
-        <Text 
-          onPress={() => console.log('Seller Tapped')}
-          style={{position: 'absolute', left: 145, top: 98, fontSize: 16, color: 'white', fontFamily: 'Helvetica', textDecorationLine: 'underline'}}>ABC Motorsports</Text>
+        <Text style={{position: 'absolute', left: 140, top: 65, fontSize: 22, color: 'white', fontFamily: 'Helvetica'}}>TECH SPECS</Text>
       </View>
       <View>
-        <Text style={{position: 'absolute', margin: 30, top: 125, fontSize: 22, color: 'white', fontFamily: 'Helvetica', textAlign: 'center'}}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</Text>
+        <Text style={{position: 'absolute', margin: 30, top: 90, fontSize: 22, color: 'white', fontFamily: 'Baskerville', textAlign: 'left'}}>•Lorem ipsum dolor sit amet. {"\n"} •consectetur adipiscing elit sed do eiusmod tempor incididunt ut. {"\n"} •labore et dolore magna aliqua. {"\n"} •Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
       </View>
       <View>
         <Text 
@@ -47,7 +43,7 @@ export default function Home() {
           style={{position: 'absolute', left: 38, top: 380, fontSize: 16, color: 'white', fontFamily: 'Helvetica', textDecorationLine: 'underline'}}>Concept
         </Text>
         <Text 
-          onPress={pressHandler}
+          onPress={() => console.log('Technical Tapped')}
           style={{position: 'absolute', left: 180, top: 380, fontSize: 16, color: 'white', fontFamily: 'Helvetica', textDecorationLine: 'underline'}}>Technical
         </Text>
         <Text 
